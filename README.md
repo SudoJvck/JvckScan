@@ -14,7 +14,7 @@ JvckScan is a lightweight Python script designed for scanning open ports on a ta
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/jvckscan.git
+   git clone https://github.com/SudoJvck/jvckscan.git
    cd jvckscan
    ```
 
