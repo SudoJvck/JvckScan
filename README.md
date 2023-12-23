@@ -1,32 +1,49 @@
 # JvckScan - Simple Port Scanner
 
-## Overview
-
-JvckScan is a lightweight Python script designed for scanning open ports on a target IP address. This tool facilitates a quick assessment of a host's security posture by identifying accessible ports within the entire range (1 to 65535).
+JvckScan is a lightweight Python script designed for scanning open ports on a target IP address. With a user-friendly interface, it prompts the user to input a target IP and initiates a scan across the configured range of ports.
 
 ## Features
 
-- **User-Friendly Interface:** JvckScan prompts the user to input the target IP address, making it easy to initiate scans.
+- **Custom Banner:** Display a custom ASCII banner using the `pyfiglet` library.
   
-- **Port Scanning:** The script utilizes socket programming to scan each port within the specified range and identifies open ports on the target.
+- **Port Scanning:** The script utilizes socket programming to scan each port within the configured range and identifies open ports on the target.
 
 - **Informative Output:** Results are displayed in the console, providing a clear indication of open ports on the target IP.
 
 ## Usage
 
-1. Run the script by executing the Python file.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/jvckscan.git
+   cd jvckscan
+   ```
 
+2. **Install Dependencies:**
+   ```bash
+   pip install pyfiglet
+   ```
+
+3. **Run the Script:**
+   ```bash
    python jvckscan.py
+   ```
 
-2. Input the target IP address when prompted.
+4. **Input Target IP:**
+   Enter the target IP address when prompted.
 
-3. The script will initiate a port scan and display the results.
+5. **Review Results:**
+   The script will initiate a port scan and display the results.
 
-## Dependencies
+## Configuration
 
-Ensure you have the following Python libraries installed:
+Adjust the script behavior by modifying the `config.ini` file.
 
-pip install pyfiglet
+```ini
+[JvckScanConfig]
+socket_timeout = 0.5
+start_port = 1
+end_port = 65535
+```
 
 ## Notes
 
